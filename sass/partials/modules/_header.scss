@@ -1,0 +1,22 @@
+// css code for header section 
+
+header{
+	background-color: $section-bgrd-clr;
+	margin: 1.5em 0;
+	padding: 1em;
+}
+
+.header-title{
+	display: inline-block;
+	width: 70%;
+	padding: 2.5em 1.5em;
+}
+
+header a img{
+	border: 0.3em solid #fff;
+	display: inline-block;
+	float: right;
+	overflow: hidden;
+	margin: 0.5em;
+	width: 3%;
+}

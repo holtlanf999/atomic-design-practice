@@ -1,0 +1,14 @@
+// Partials 
+@import "partials/_functions.scss";
+@import "partials/_mixins.scss";
+@import "partials/_placeholders.scss";
+@import "partials/_variables.scss";
+
+// Modules
+@import "partials/_base.scss";
+@import "partials/modules/_header.scss";
+@import "partials/modules/_nav.scss";
+@import "partials/modules/_blog-post.scss";
+@import "partials/modules/_aside.scss";
+@import "partials/modules/_main-article.scss";
+@import "partials/modules/_footer.scss";
