@@ -1,1 +1,30 @@
-// css code for nav section 
+// css code for nav section
+nav{
+	background-color: $section-bgrd-clr;
+	display: block;
+	list-style: none;
+	margin: 1.5em 0;
+	padding: 1.5em 0;
+	width: 100%;
+
+	a {
+		color: #FFA500;
+		font-size: 1.5em;
+		margin: 0 1em;
+		text-decoration: none;
+	}
+
+	a:hover{
+		border-bottom: 0.2em solid #FFA500;
+	}
+
+	ul li{
+		display: inline-block;
+	}
+
+	@media( min-width: 640px ){
+		#menu-toggle{
+			display: none;
+		}
+	}
+}
