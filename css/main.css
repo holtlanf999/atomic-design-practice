@@ -3,31 +3,34 @@
 @import url(https://fonts.googleapis.com/css?family=Marvel:400,400italic);
 body {
   background-color: #000;
+  background-image: url(../img/bgrd.jpg);
   color: #fff;
+  font-family: "Roboto";
   margin: 0 auto;
   width: 80%; }
 
 header {
-  background-color: #494949;
+  background-color: rgba(102, 0, 204, 0.2);
+  font-size: 2em;
   margin: 1.5em 0;
   padding: 1em; }
 
 .header-title {
   display: inline-block;
-  width: 70%;
-  padding: 2.5em 1.5em; }
+  width: 65%;
+  padding: 0 1.5em; }
 
 header a img {
-  border: 0.3em solid #fff;
   border-radius: 1em;
   display: inline-block;
   float: right;
   overflow: hidden;
   margin: 0.5em;
+  padding: 0.2em;
   width: 3%; }
 
 nav {
-  background-color: #494949;
+  background-color: rgba(102, 0, 204, 0.2);
   display: block;
   list-style: none;
   margin: 1.5em 0;
@@ -45,5 +48,88 @@ nav {
   @media (min-width: 640px) {
     nav #menu-toggle {
       display: none; } }
+
+@media (min-width: 640px) {
+  .posts {
+    display: inline-block;
+    float: left;
+    width: 75%; }
+    .posts .blog-post {
+      background-color: rgba(102, 0, 204, 0.2);
+      display: inline-block;
+      float: left;
+      margin: 2.5% 1.5%;
+      padding: 2.5%;
+      width: 25%; }
+    .posts h4 {
+      font-size: 1.5em; }
+    .posts .blog-post p, .posts img {
+      overflow: hidden;
+      width: 100%; }
+    .posts .blog-post button {
+      background-color: rgba(10, 10, 10, 0.5);
+      border: none;
+      border-radius: 1em;
+      color: #FFA500;
+      font-size: 1.2em;
+      margin: 0 auto;
+      padding: 1em 0;
+      width: 70%; }
+    .posts .paginator {
+      display: block;
+      margin: 2em auto;
+      overflow: hidden;
+      width: 60%; }
+    .posts .paginator p, .posts a {
+      color: #FFA500;
+      display: inline-block;
+      font-size: 1.5em;
+      margin: 0 auto;
+      width: 20%; } }
+
+@media (min-width: 640px) {
+  .recent-articles {
+    background-color: rgba(10, 10, 10, 0.5);
+    display: inline-block;
+    float: right;
+    margin: 1.5em 0 0 1.5em;
+    overflow: hidden;
+    width: 23%; }
+
+  .recent-articles h4 {
+    font-size: 1.5em;
+    margin: 1.5em 1em 0 1em; }
+
+  .recent-articles ul li {
+    display: block;
+    list-style: none;
+    width: 90%; }
+
+  .recent-articles a {
+    color: #fff;
+    float: right;
+    margin: 0.5em;
+    text-decoration: none; }
+
+  .recent-articles ul li a {
+    color: #00AD00;
+    display: block;
+    font-size: 1.5em;
+    float: left;
+    margin: 0.5em 0 0 0;
+    overflow: hidden;
+    width: 100%; }
+
+  .recent-articles ul li a:hover {
+    color: #FFA500;
+    border-bottom: 2px solid #fff; }
+
+  .recent-articles ul li time {
+    display: block; } }
+@media (min-width: 640px) {
+  .main-post {
+    display: block;
+    width: 100%;
+    overflow: hidden; } }
 
 /*# sourceMappingURL=main.css.map */

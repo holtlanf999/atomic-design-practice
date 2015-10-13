@@ -1,1 +1,9 @@
 // css code for main-article section 
+
+@media(min-width: 640px){
+	.main-post{
+		display: block;
+		width: 100%;
+		overflow: hidden;
+	}
+}

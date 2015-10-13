@@ -1,1 +1,54 @@
 // css code for aside section
+
+@media(min-width: 640px){
+
+	.recent-articles{
+		background-color: rgba( 10, 10, 10, 0.5 );
+		display: inline-block;
+		float: right;
+		margin: 1.5em 0 0 1.5em;
+		overflow: hidden;
+		width: 23%;
+	}	
+
+	.recent-articles h4{
+		font-size: 1.5em;
+		margin: 1.5em 1em 0 1em;
+	}
+
+	.recent-articles ul li{
+		display: block;
+		list-style: none;
+		width: 90%;
+		}
+
+		.recent-articles a {
+			color: #fff;
+			float: right;
+			margin: 0.5em;
+			text-decoration: none;
+			
+		}
+
+		.recent-articles ul li a{
+			color: #00AD00;
+			display: block;
+			font-size: 1.5em;
+			float: left;
+			margin: 0.5em 0 0 0;
+			overflow: hidden;
+			width: 100%;
+		}
+
+		.recent-articles ul li a:hover{
+			color: #FFA500;
+			border-bottom: 2px solid #fff;
+		}
+
+		.recent-articles ul li time{
+			display: block;
+		}
+
+
+}
+
