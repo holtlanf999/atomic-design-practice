@@ -1,5 +1,45 @@
 // css code for footer section 
 
-@media(min-width: 1024px){
-	
+.main-footer{	
+	background-color: $section-bgrd-clr;
+	overflow: hidden;
+	width: 100%;
+
+	p{
+		margin: 2em 0 -2em 1.5em;
+	}
+
+	 ul li{
+		float: right;
+		width: 8%;
+		margin: -1em 0.2em 1em 0;
+		list-style: none;
+	}
+
+	ul li a img{
+		width: 50%;
+	}
+}
+
+@media(min-width: 768px){
+
+	.main-footer{
+		background-color: $section-bgrd-clr;
+		overflow: hidden;
+		padding: 0.5em;
+
+		header ul{
+			display: inline-block;
+			float: right;
+			overflow: hidden;
+			margin: 0 auto;
+			width: 20%;
+			}
+
+		header ul li {
+			display: inline-block;
+			width: 48%;
+		}
+	}
+
 }

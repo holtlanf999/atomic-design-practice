@@ -5,19 +5,21 @@
 @import url(https://fonts.googleapis.com/css?family=Marvel:400,400italic);
 
 body{
+	// background-attachment: fixed;
 	background-color: #000;
-	background-image: url(../img/bgrd.jpg);
+	// background-image: url(../img/bgrd.jpg);
+	// background-repeat: no-repeat;
+	// background-size: 100%;
 	color: #fff;
 	font-family: "Roboto";
 	width: 100%;
 }
 
 
-@media(min-width: 1024px){
+@media(min-width: 768px){
 
 	body{
-		background-color: #000;
-		background-image: url(../img/bgrd.jpg);
+		background-size: 100%;
 		color: #fff;
 		font-family: "Roboto";
 		margin: 0 auto;
