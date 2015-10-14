@@ -2,7 +2,36 @@
 
 .posts{
 
-	@media(min-width: 640px){
+	.blog-post{
+		background-color: $section-bgrd-clr;
+		display: inline-block;
+		margin: 1em 2% ;
+		padding: 2.5%;
+		width: 40%;
+	}
+	
+	h4{
+		font-size: 1.5em
+	}
+
+	.blog-post p,img{
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.blog-post button{
+		background-color: rgba( 10,10,10, 0.5);
+		border: none;
+		border-radius: 1em;
+		display: block;
+		color: #FFA500;
+		font-size: 1.2em;
+		margin: 0 auto;
+		padding: 1em 0;
+		width: 70%;
+	}
+
+	@media(min-width: 1024px){
 		display: inline-block;
 		float: left;
 		width: 75%;
@@ -34,7 +63,6 @@
 			margin: 0 auto;
 			padding: 1em 0;
 			width: 70%;
-
 		}
 
 		.paginator{

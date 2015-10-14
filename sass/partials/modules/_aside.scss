@@ -1,6 +1,15 @@
 // css code for aside section
 
-@media(min-width: 640px){
+.recent-articles{
+		background-color: rgba( 10, 10, 10, 0.5 );
+		display: block;
+		margin: 1.5em 0 0 1.5em;
+		overflow: hidden;
+		width: 100%;
+	}	
+
+
+@media(min-width: 1024px){
 
 	.recent-articles{
 		background-color: rgba( 10, 10, 10, 0.5 );
