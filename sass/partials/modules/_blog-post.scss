@@ -1,13 +1,16 @@
 // css code for blog section 
 
 .posts{
+	display: block;
+	
+	width: 100%;
 
 	.blog-post{
 		background-color: $section-bgrd-clr;
-		display: inline-block;
-		margin: 1em 2% ;
-		padding: 2.5%;
-		width: 40%;
+		display: block;
+		margin: 1em 0;
+		padding: 0.5em;
+		width: 100%;
 
 		h4{
 			font-size: 1.5em
@@ -35,6 +38,15 @@
 		margin: 2em auto;
 		width: 90%;
 		text-align: center;
+
+		@media(min-width: 768px){
+			background-color: $section-bgrd-clr;
+			display: inline-block;
+			float: left;
+			margin: 2.5% 1.5%;
+			padding: 2.5%;
+			width: 25%;
+		}
 	}
 
 	.paginator p,a{
@@ -48,15 +60,6 @@
 		display: inline-block;
 		float: left;
 		width: 75%;
-
-		.blog-post{
-			background-color: $section-bgrd-clr;
-			display: inline-block;
-			float: left;
-			margin: 2.5% 1.5%;
-			padding: 2.5%;
-			width: 25%;
-		}
 	}
 
 }

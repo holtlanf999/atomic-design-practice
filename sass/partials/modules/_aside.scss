@@ -1,5 +1,13 @@
 // css code for aside section
 
+.recent-articles{
+	background-color: rgba( 10, 10, 10, 0.5 );
+	display: block;
+	margin: 1.5em 0 0 1.5em;
+	overflow: hidden;
+	width: 100%;
+}
+
 @media(min-width: 1366px){
 
 	.recent-articles{
@@ -47,7 +55,6 @@
 		ul li time{
 			display: block;
 		}
-
 
 	}	
 

@@ -17,48 +17,49 @@ body {
 header {
   background-color: rgba(82, 82, 82, 0.7);
   background-image: url(../img/header-bgrd.jpg);
-  font-size: 2em;
-  margin: 0.5em 0;
-  overflow: hidden;
-  padding: 0.5em; }
+  font-size: 1.5em;
+  padding: 0 0.5em;
+  overflow: hidden; }
   header .header-title {
     display: block;
-    width: 60%; }
-  header ul {
+    width: 100%;
+    padding: 0 1%; }
+  header .header-social-icons {
+    display: block;
     list-style: none;
-    margin: -3.5em auto 2.5em auto;
-    overflow: hidden; }
-  header ul li {
-    float: right;
-    width: 10%;
-    margin: 0 0.5em; }
-  header ul li a img {
-    width: 50%; }
-
-@media (min-width: 1024px) {
-  header {
-    background-color: rgba(82, 82, 82, 0.7);
-    font-size: 2em;
-    margin: 1.5em 0;
     overflow: hidden;
-    padding: 1em; }
-    header ul {
-      display: inline-block;
-      float: right;
+    margin: 0;
+    padding: 0 1%;
+    width: 100%; }
+    @media (min-width: 640px) {
+      header .header-social-icons {
+        display: block;
+        float: left;
+        overflow: hidden;
+        padding: 0 0 0.5em 0;
+        width: 100%; } }
+  header .social-icon-container {
+    float: left;
+    margin-right: 5%;
+    padding: 0.5% 0;
+    width: 5%; }
+    @media (min-width: 640px) {
+      header .social-icon-container {
+        margin-right: 2.5%; } }
+  header .social-links img {
+    width: 100%;
+    overflow: hidden; }
+    @media (min-width: 640px) {
+      header .social-links img {
+        border-radius: 1em;
+        width: 80%; } }
+  @media (min-width: 1024px) {
+    header {
+      background-color: rgba(82, 82, 82, 0.7);
+      font-size: 2em;
       overflow: hidden;
-      margin: 0 auto;
-      width: 20%; }
-    header ul li {
-      display: inline-block;
-      width: 48%; }
-    header .header-title {
-      display: inline-block;
-      width: 45%;
-      padding: 0 1.5em; }
-    header ul li a img {
-      border-radius: 1em;
-      width: 40%;
-      margin: 0 1.5em; } }
+      padding: 0 0.5em; } }
+
 nav {
   background-color: rgba(82, 82, 82, 0.7);
   display: block;
@@ -94,49 +95,60 @@ nav {
       border-bottom: 0.2em solid #FFA500; }
     nav ul li {
       display: inline-block; } }
-.posts .blog-post {
-  background-color: rgba(82, 82, 82, 0.7);
-  display: inline-block;
-  margin: 1em 2%;
-  padding: 2.5%;
-  width: 40%; }
-  .posts .blog-post h4 {
-    font-size: 1.5em; }
-  .posts .blog-post p, .posts .blog-post img {
-    overflow: hidden;
-    width: 100%; }
-  .posts .blog-post button {
-    background-color: rgba(10, 10, 10, 0.5);
-    border: none;
-    border-radius: 1em;
+.posts {
+  display: block;
+  width: 100%; }
+  .posts .blog-post {
+    background-color: rgba(82, 82, 82, 0.7);
     display: block;
-    color: #FFA500;
-    font-size: 1.2em;
-    margin: 0 auto;
-    padding: 1em 0;
-    width: 70%; }
-.posts .paginator {
-  display: inline-block;
-  margin: 2em auto;
-  width: 90%;
-  text-align: center; }
-.posts .paginator p, .posts a {
-  color: #FFA500;
-  display: inline-block;
-  margin: 0 auto;
-  width: 20%; }
-@media (min-width: 768px) {
-  .posts {
+    margin: 1em 0;
+    padding: 0.5em;
+    width: 100%; }
+    .posts .blog-post h4 {
+      font-size: 1.5em; }
+    .posts .blog-post p, .posts .blog-post img {
+      overflow: hidden;
+      width: 100%; }
+    .posts .blog-post button {
+      background-color: rgba(10, 10, 10, 0.5);
+      border: none;
+      border-radius: 1em;
+      display: block;
+      color: #FFA500;
+      font-size: 1.2em;
+      margin: 0 auto;
+      padding: 1em 0;
+      width: 70%; }
+  .posts .paginator {
     display: inline-block;
-    float: left;
-    width: 75%; }
-    .posts .blog-post {
-      background-color: rgba(82, 82, 82, 0.7);
+    margin: 2em auto;
+    width: 90%;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .posts .paginator {
+        background-color: rgba(82, 82, 82, 0.7);
+        display: inline-block;
+        float: left;
+        margin: 2.5% 1.5%;
+        padding: 2.5%;
+        width: 25%; } }
+  .posts .paginator p, .posts a {
+    color: #FFA500;
+    display: inline-block;
+    margin: 0 auto;
+    width: 20%; }
+  @media (min-width: 768px) {
+    .posts {
       display: inline-block;
       float: left;
-      margin: 2.5% 1.5%;
-      padding: 2.5%;
-      width: 25%; } }
+      width: 75%; } }
+
+.recent-articles {
+  background-color: rgba(10, 10, 10, 0.5);
+  display: block;
+  margin: 1.5em 0 0 1.5em;
+  overflow: hidden;
+  width: 100%; }
 
 @media (min-width: 1366px) {
   .recent-articles {
