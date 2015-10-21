@@ -17,6 +17,7 @@ header{
 		display: block;
 		list-style: none;
 		overflow: hidden;
+<<<<<<< HEAD
 		margin: 0;
 		padding: 0 1%;
 		width: 100%;		
@@ -38,6 +39,64 @@ header{
 
 		@media(min-width: 640px){
 			margin-right: 2.5%;
+=======
+	}
+
+	.social-icons li{
+		float: right;
+		width: 10%;
+		margin: 0 0.5em;
+	}
+
+	.social-icons li a img{
+		width: 50%;
+	}
+}
+
+@media(min-width: 320px){
+	header{
+		font-size: 0.5em;
+		margin: 0 auto;
+		// overflow: hidden;
+		padding: 0.5em;
+	}
+
+	.header-title{
+		display: inline-block;
+		width: 45%;
+		padding: 0 1.5em;
+	}
+}
+
+@media(min-width: 640px){
+	header{
+		font-size: 1em;
+		margin: 0 auto;
+		// overflow: hidden;
+		padding: 1em;
+	}
+	
+	.header-title{
+		display: inline-block;
+		width: 45%;
+		padding: 0 1.5em;
+	}
+}
+
+@media(min-width: 1366px){
+
+	header{
+		background-color: $section-bgrd-clr;
+		font-size: 2em;
+		margin: 1.5em 0;
+		// overflow: hidden;
+		padding: 1em;
+
+		.header-title{
+			display: inline-block;
+			width: 45%;
+			padding: 0 1.5em;
+>>>>>>> origin/master
 		}
 	}
 
@@ -45,10 +104,22 @@ header{
 		width: 100%;
 		overflow: hidden;
 
+<<<<<<< HEAD
 		@media(min-width: 640px){
+=======
+		.social-icons li {
+			display: inline-block;
+			width: 15%;
+			padding: 0;
+			margin:0 -1em;
+		}
+
+		ul li a img{
+>>>>>>> origin/master
 			border-radius: 1em;
 			width: 80%;
 		}
+<<<<<<< HEAD
 	}
 
 	@media(min-width: 1024px){
@@ -59,3 +130,7 @@ header{
 	}
 }
 
+=======
+	}
+}
+>>>>>>> origin/master
