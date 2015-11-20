@@ -2,32 +2,37 @@
 
 .main-footer{	
 	background-color: $section-bgrd-clr;
-	overflow: hidden;
+	display: table;
+	padding: 2% 0;
 	width: 100%;
 
 	p{
-		margin: 2em 0 -2em 1.5em;
+		display: table-cell;
+		vertical-align: middle;
+		padding: 0 5%;
+		width: 60%;
+	}
+
+	ul {
+		width: 40%;
+		overflow: hidden;
+		margin-left: 35%;
 	}
 
 	 ul li{
 		float: right;
-		width: 8%;
-		margin: -1em 0.2em 1em 0;
+		width: 20%;
+		padding: 0 10%;
 		list-style: none;
 	}
 
 	ul li a img{
-		width: 50%;
+		width: 100%;
 	}
 }
 
-@media(min-width: 768px){
-
+@media(min-width: 1024px){
 	.main-footer{
-		background-color: $section-bgrd-clr;
-		overflow: hidden;
-		padding: 0.5em;
-
 		header ul{
 			display: inline-block;
 			float: right;
@@ -35,7 +40,6 @@
 			margin: 0 auto;
 			width: 20%;
 			}
-
 		header ul li {
 			display: inline-block;
 			width: 48%;

@@ -1,66 +1,38 @@
 // css code for nav section
 
-nav{
+nav {
+	font-size: 1.4em;
 	background-color: $section-bgrd-clr;
-	display: block;
-	
-	margin: 1em 0;
-	padding: 1em 0;
+	margin: 0;
 	width: 100%;
-	
-	ul .nav-main{
-		display: inline-block;
-		list-style: none;
-		margin: 0 0;
-		text-align: center;
-		width: 22%;
-	}
-
-	a {
-		color: #FFA500;
-		font-size: 1.5em;
+	.nav-items-container {
 		margin: 0 auto;
-		text-decoration: none;
-	}
-}
-
-@media(min-width: 320px){
-
-	ul .nav-main{
-		display: block;
-		width: 100%;
-	}
-}
-
-@media(min-width: 640px){
-}
-
-@media( min-width: 1366px ){
-	
-	nav{
-		background-color: $section-bgrd-clr;
-		display: block;
-		list-style: none;
-		margin: 1.5em 0;
-		padding: 1.5em 0;
-		width: 100%;
-
-		a {
-			color: #FFA500;
-			font-size: 1.5em;
-			margin: 0 1em;
-			text-decoration: none;
-		}
-
-		a:hover{
-			border-bottom: 0.2em solid #FFA500;
-		}
-
-		ul li{
-			display: inline-block;
+		padding: 0;
+		.nav-main {
+			border-bottom: 1px solid $link-color; 
+			list-style: none;
+			margin: 0 2%;
+			padding: 2% 5%;
+			width: 100%;
+			a{
+				color: $link-color;
+				text-decoration: none;
+			}
 		}
 	}
-	// #menu-toggle{
-	// 	display: none;
-	// }
+	@media(min-width: 1024px) {
+		.nav-items-container {
+			padding: 0 5%;
+			.nav-main {
+				display: inline-block;
+				padding: 1% 0;
+				text-align: center;
+				width: 10%;
+				&:hover{
+					border-bottom: none;
+					background-color: lighten($section-bgrd-clr, 10%);
+				}
+			}
+		}
+	}
 }

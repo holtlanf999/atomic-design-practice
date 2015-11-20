@@ -1,9 +1,29 @@
-// css code for main-article section 
-
-@media(min-width: 768px){
-	.main-post{
+.main-article {
+	background-color: lighten($section-bgrd-clr, 10%);
+	margin: 3% 0;
+	.mail{
+		color: $mail-link-color;
 		display: block;
-		width: 100%;
-		overflow: hidden;
+		margin: 1% 5% 5%;
+		width: 80%;
+	}
+	.article-container {
+		display: block;
+		margin: 5%;
+		width: 90%;
+		.author-name {
+			font-size: 2em;
+			margin: 0;
+		}
+		h4 {
+			font-size: 4em;
+		}
+		p {
+			padding: 0.5% 5%;
+		}
+		img {
+			margin: 5% 5%;
+			width: 90%;
+		}
 	}
 }

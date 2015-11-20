@@ -1,66 +1,73 @@
 // css code for blog section 
 
-.posts{
-	display: block;
-	
-	width: 100%;
-
-	.blog-post{
-		background-color: $section-bgrd-clr;
+.posts {
+	.blog-post {
+		background-color: $section-bgrd-clr; //cambiar nombre de variable.
 		display: block;
-		margin: 1em 0;
-		padding: 0.5em;
-		width: 100%;
-
-		h4{
-			font-size: 1.5em
-		}
-
-		p,img{
-			overflow: hidden;
+		margin: 5% auto 0;
+		overflow: hidden;
+		width: 90%;
+		img {
 			width: 100%;
 		}
-
-		button{
-			background-color: rgba( 10,10,10, 0.5);
+		h4 {
+			font-size: 1.5em;
+			margin: 2.5% auto;
+			padding: 0 5%;
+			width: 90%;
+		}
+		time {
+			font-size: 0.8em;
+			padding: 2.5% 5%;
+			width: 90%;
+		}
+		p {
+			font-size: 1em;
+			padding: 2.5% 5%;
+			width: 90%;
+		}
+		.button {
+			background-color: lighten($section-bgrd-clr, 10%);
 			border: none;
-			border-radius: 1em;
 			display: block;
-			color: #FFA500;
 			font-size: 1.2em;
-			margin: 0 auto;
+			margin: 4% auto 0;
 			padding: 1em 0;
-			width: 70%;
-		}	
-	}
-	.paginator{
-		display: inline-block;
-		margin: 2em auto;
-		width: 90%;
-		text-align: center;
-
-		@media(min-width: 768px){
-			background-color: $section-bgrd-clr;
-			display: inline-block;
-			float: left;
-			margin: 2.5% 1.5%;
-			padding: 2.5%;
-			width: 25%;
+			text-align: center; 
+			text-decoration: none;
+			width: 100%;
+			&:hover {
+				background-color: lighten($section-bgrd-clr, 30%);
+				color: #fff;
+			}
 		}
 	}
-
-	.paginator p,a{
-		color: #FFA500;
+	@media(min-width: 1024px) {
 		display: inline-block;
-		margin: 0 auto;
-		width: 20%;
+		width: 68%;
+		.blog-post {
+			display: inline-block;
+			float: left;
+			margin-left: 2%;
+			width: 30%;
+			button {
+				padding: 0.5em 1em;
+			}
+		}
 	}
-
-	@media(min-width: 768px){
+	.paginator {
 		display: inline-block;
-		float: left;
-		width: 75%;
+		margin: 5% 0 5% 5%;
+		text-align: center; 
+		width: 90%;
+		a{
+			display: inline-block;
+			width: 30%;
+		}
+		p{
+			display: inline-block;
+			width: 20%;
+		}
 	}
-
 }
 

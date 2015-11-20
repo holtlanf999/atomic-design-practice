@@ -1,178 +1,353 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300);
-@import url(https://fonts.googleapis.com/css?family=Marvel:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300);
+@import url(https://fonts.googleapis.com/css?family=Coda:800);
+/* line 1, ../sass/partials/_base.scss */
 body {
+  background-image: url("../img/background.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
   background-color: #000;
   color: #fff;
-  font-family: "Roboto";
-  width: 100%; }
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 100%;
+}
+/* line 9, ../sass/partials/_base.scss */
+body a {
+  color: #b2d628;
+}
 
-@media (min-width: 1366px) {
-  body {
-    background-size: 100%;
-    color: #fff;
-    font-family: "Roboto";
-    margin: 0 auto;
-    width: 90%; } }
+/* line 1, ../sass/partials/modules/_header.scss */
+header {
+  background-size: 100%;
+  background-color: rgba(86, 133, 112, 0.2);
+  background-image: url(../img/header-bgrd.jpg);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  margin: 0;
+  overflow: hidden;
+  padding: 5% 5% 0;
+  width: 100%;
+}
+/* line 13, ../sass/partials/modules/_header.scss */
+header .header-title {
+  font-family: "Coda";
+  margin: 0;
+  width: 100%;
+}
+/* line 19, ../sass/partials/modules/_header.scss */
+header .header-icons-container {
+  display: block;
+  list-style: none;
+  margin: 1% 0 2%;
+  padding: 0 2% 0 0;
+  width: 100%;
+}
+/* line 27, ../sass/partials/modules/_header.scss */
+header .social-icon {
+  display: inline-block;
+  width: 40px;
+  margin-right: 5%;
+}
+/* line 33, ../sass/partials/modules/_header.scss */
+header .social-icon .social-links img {
+  height: auto;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  /* line 27, ../sass/partials/modules/_header.scss */
+  header .social-icon {
+    margin-right: 2.5%;
+  }
+}
+
+/* line 3, ../sass/partials/modules/_nav.scss */
 nav {
-  background-color: rgba(82, 82, 82, 0.7);
-  display: block;
-  margin: 1em 0;
-  padding: 1em 0;
-  width: 100%; }
-  nav ul .nav-main {
+  font-size: 1.4em;
+  background-color: rgba(86, 133, 112, 0.2);
+  margin: 0;
+  width: 100%;
+}
+/* line 8, ../sass/partials/modules/_nav.scss */
+nav .nav-items-container {
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 11, ../sass/partials/modules/_nav.scss */
+nav .nav-items-container .nav-main {
+  border-bottom: 1px solid #b2d628;
+  list-style: none;
+  margin: 0 2%;
+  padding: 2% 5%;
+  width: 100%;
+}
+/* line 17, ../sass/partials/modules/_nav.scss */
+nav .nav-items-container .nav-main a {
+  color: #b2d628;
+  text-decoration: none;
+}
+@media (min-width: 1024px) {
+  /* line 24, ../sass/partials/modules/_nav.scss */
+  nav .nav-items-container {
+    padding: 0 5%;
+  }
+  /* line 26, ../sass/partials/modules/_nav.scss */
+  nav .nav-items-container .nav-main {
     display: inline-block;
-    list-style: none;
-    margin: 0 0;
+    padding: 1% 0;
     text-align: center;
-    width: 22%; }
-  nav a {
-    color: #FFA500;
-    font-size: 1.5em;
-    margin: 0 auto;
-    text-decoration: none; }
+    width: 10%;
+  }
+  /* line 31, ../sass/partials/modules/_nav.scss */
+  nav .nav-items-container .nav-main:hover {
+    border-bottom: none;
+    background-color: rgba(109, 161, 138, 0.2);
+  }
+}
 
-@media (min-width: 320px) {
-  ul .nav-main {
-    display: block;
-    width: 100%; } }
-@media (min-width: 1366px) {
-  nav {
-    background-color: rgba(82, 82, 82, 0.7);
+/* line 4, ../sass/partials/modules/_blog-post.scss */
+.posts .blog-post {
+  background-color: rgba(86, 133, 112, 0.2);
+  display: block;
+  margin: 5% auto 0;
+  overflow: hidden;
+  width: 90%;
+}
+/* line 10, ../sass/partials/modules/_blog-post.scss */
+.posts .blog-post img {
+  width: 100%;
+}
+/* line 13, ../sass/partials/modules/_blog-post.scss */
+.posts .blog-post h4 {
+  font-size: 1.5em;
+  margin: 2.5% auto;
+  padding: 0 5%;
+  width: 90%;
+}
+/* line 19, ../sass/partials/modules/_blog-post.scss */
+.posts .blog-post time {
+  font-size: 0.8em;
+  padding: 2.5% 5%;
+  width: 90%;
+}
+/* line 24, ../sass/partials/modules/_blog-post.scss */
+.posts .blog-post p {
+  font-size: 1em;
+  padding: 2.5% 5%;
+  width: 90%;
+}
+/* line 29, ../sass/partials/modules/_blog-post.scss */
+.posts .blog-post .button {
+  background-color: rgba(109, 161, 138, 0.2);
+  border: none;
+  display: block;
+  font-size: 1.2em;
+  margin: 4% auto 0;
+  padding: 1em 0;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+/* line 39, ../sass/partials/modules/_blog-post.scss */
+.posts .blog-post .button:hover {
+  background-color: rgba(171, 201, 188, 0.2);
+  color: #fff;
+}
+@media (min-width: 1024px) {
+  /* line 3, ../sass/partials/modules/_blog-post.scss */
+  .posts {
+    display: inline-block;
+    width: 68%;
+  }
+  /* line 48, ../sass/partials/modules/_blog-post.scss */
+  .posts .blog-post {
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+    width: 30%;
+  }
+  /* line 53, ../sass/partials/modules/_blog-post.scss */
+  .posts .blog-post button {
+    padding: 0.5em 1em;
+  }
+}
+/* line 58, ../sass/partials/modules/_blog-post.scss */
+.posts .paginator {
+  display: inline-block;
+  margin: 5% 0 5% 5%;
+  text-align: center;
+  width: 90%;
+}
+/* line 63, ../sass/partials/modules/_blog-post.scss */
+.posts .paginator a {
+  display: inline-block;
+  width: 30%;
+}
+/* line 67, ../sass/partials/modules/_blog-post.scss */
+.posts .paginator p {
+  display: inline-block;
+  width: 20%;
+}
+
+/* line 3, ../sass/partials/modules/_aside.scss */
+.recent-articles {
+  background-color: rgba(30, 30, 30, 0.6);
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+/* line 10, ../sass/partials/modules/_aside.scss */
+.recent-articles h4 {
+  font-size: 1.5em;
+  margin: 5%;
+  text-align: center;
+}
+/* line 16, ../sass/partials/modules/_aside.scss */
+.recent-articles ul {
+  font-size: 0.8em;
+  list-style: none;
+  margin: 5%;
+  padding: 0;
+}
+/* line 21, ../sass/partials/modules/_aside.scss */
+.recent-articles ul a {
+  color: #00ad00;
+}
+/* line 25, ../sass/partials/modules/_aside.scss */
+.recent-articles .recent-all {
+  color: #00ad00;
+  display: block;
+  padding-bottom: 5%;
+  text-align: right;
+  width: 92%;
+}
+@media (min-width: 1024px) {
+  /* line 3, ../sass/partials/modules/_aside.scss */
+  .recent-articles {
+    display: inline-block;
+    float: right;
+    margin: 3.2% 3% 0 0;
+    overflow: hidden;
+    width: 28%;
+  }
+  /* line 40, ../sass/partials/modules/_aside.scss */
+  .recent-articles h4 {
+    font-size: 1.5em;
+    margin: 1.5em 1em 0 1em;
+  }
+  /* line 45, ../sass/partials/modules/_aside.scss */
+  .recent-articles ul li {
     display: block;
     list-style: none;
-    margin: 1.5em 0;
-    padding: 1.5em 0;
-    width: 100%; }
-    nav a {
-      color: #FFA500;
-      font-size: 1.5em;
-      margin: 0 1em;
-      text-decoration: none; }
-    nav a:hover {
-      border-bottom: 0.2em solid #FFA500; }
-    nav ul li {
-      display: inline-block; } }
-.posts {
-  display: block;
-  width: 100%; }
-  .posts .blog-post {
-    background-color: rgba(82, 82, 82, 0.7);
-    display: block;
-    margin: 1em 0;
-    padding: 0.5em;
-    width: 100%; }
-    .posts .blog-post h4 {
-      font-size: 1.5em; }
-    .posts .blog-post p, .posts .blog-post img {
-      overflow: hidden;
-      width: 100%; }
-    .posts .blog-post button {
-      background-color: rgba(10, 10, 10, 0.5);
-      border: none;
-      border-radius: 1em;
-      display: block;
-      color: #FFA500;
-      font-size: 1.2em;
-      margin: 0 auto;
-      padding: 1em 0;
-      width: 70%; }
-  .posts .paginator {
-    display: inline-block;
-    margin: 2em auto;
     width: 90%;
-    text-align: center; }
-    @media (min-width: 768px) {
-      .posts .paginator {
-        background-color: rgba(82, 82, 82, 0.7);
-        display: inline-block;
-        float: left;
-        margin: 2.5% 1.5%;
-        padding: 2.5%;
-        width: 25%; } }
-  .posts .paginator p, .posts a {
-    color: #FFA500;
-    display: inline-block;
-    margin: 0 auto;
-    width: 20%; }
-  @media (min-width: 768px) {
-    .posts {
-      display: inline-block;
-      float: left;
-      width: 75%; } }
-
-.recent-articles {
-  background-color: rgba(10, 10, 10, 0.5);
-  display: block;
-  margin: 1.5em 0 0 1.5em;
-  overflow: hidden;
-  width: 100%; }
-
-@media (min-width: 1366px) {
-  .recent-articles {
-    background-color: rgba(10, 10, 10, 0.5);
-    display: inline-block;
-    float: right;
-    margin: 1.5em 0 0 1.5em;
-    overflow: hidden;
-    width: 23%; }
-    .recent-articles h4 {
-      font-size: 1.5em;
-      margin: 1.5em 1em 0 1em; }
-    .recent-articles ul li {
-      display: block;
-      list-style: none;
-      width: 90%; }
-    .recent-articles a {
-      color: #fff;
-      float: right;
-      margin: 0.5em;
-      text-decoration: none; }
-    .recent-articles ul li a {
-      color: #00AD00;
-      display: block;
-      font-size: 1.5em;
-      float: left;
-      margin: 0.5em 0 0 0;
-      overflow: hidden;
-      width: 100%; }
-    .recent-articles ul li a:hover {
-      color: #FFA500;
-      border-bottom: 2px solid #fff; }
-    .recent-articles ul li time {
-      display: block; } }
-@media (min-width: 768px) {
-  .main-post {
+  }
+  /* line 51, ../sass/partials/modules/_aside.scss */
+  .recent-articles .recent-all {
+    text-decoration: none;
+    width: 30%;
+    padding: 0;
+    margin: 2.5% 0 5% 60%;
+  }
+  /* line 58, ../sass/partials/modules/_aside.scss */
+  .recent-articles ul li a {
     display: block;
-    width: 100%;
-    overflow: hidden; } }
-.main-footer {
-  background-color: rgba(82, 82, 82, 0.7);
-  overflow: hidden;
-  width: 100%; }
-  .main-footer p {
-    margin: 2em 0 -2em 1.5em; }
-  .main-footer ul li {
-    float: right;
-    width: 8%;
-    margin: -1em 0.2em 1em 0;
-    list-style: none; }
-  .main-footer ul li a img {
-    width: 50%; }
-
-@media (min-width: 768px) {
-  .main-footer {
-    background-color: rgba(82, 82, 82, 0.7);
+    font-size: 1.5em;
+    float: left;
+    margin: 0.5em 0 0 0;
     overflow: hidden;
-    padding: 0.5em; }
-    .main-footer header ul {
-      display: inline-block;
-      float: right;
-      overflow: hidden;
-      margin: 0 auto;
-      width: 20%; }
-    .main-footer header ul li {
-      display: inline-block;
-      width: 48%; } }
+    width: 100%;
+  }
+  /* line 67, ../sass/partials/modules/_aside.scss */
+  .recent-articles ul li a:hover {
+    color: #FFA500;
+  }
+  /* line 71, ../sass/partials/modules/_aside.scss */
+  .recent-articles ul li time {
+    display: block;
+  }
+}
 
-/*# sourceMappingURL=main.css.map */
+/* line 1, ../sass/partials/modules/_main-article.scss */
+.main-article {
+  background-color: rgba(109, 161, 138, 0.2);
+  margin: 3% 0;
+}
+/* line 4, ../sass/partials/modules/_main-article.scss */
+.main-article .mail {
+  color: #b2d628;
+  display: block;
+  margin: 1% 5% 5%;
+  width: 80%;
+}
+/* line 10, ../sass/partials/modules/_main-article.scss */
+.main-article .article-container {
+  display: block;
+  margin: 5%;
+  width: 90%;
+}
+/* line 14, ../sass/partials/modules/_main-article.scss */
+.main-article .article-container .author-name {
+  font-size: 2em;
+  margin: 0;
+}
+/* line 18, ../sass/partials/modules/_main-article.scss */
+.main-article .article-container h4 {
+  font-size: 4em;
+}
+/* line 21, ../sass/partials/modules/_main-article.scss */
+.main-article .article-container p {
+  padding: 0.5% 5%;
+}
+/* line 24, ../sass/partials/modules/_main-article.scss */
+.main-article .article-container img {
+  margin: 5% 5%;
+  width: 90%;
+}
+
+/* line 3, ../sass/partials/modules/_footer.scss */
+.main-footer {
+  background-color: rgba(86, 133, 112, 0.2);
+  display: table;
+  padding: 2% 0;
+  width: 100%;
+}
+/* line 9, ../sass/partials/modules/_footer.scss */
+.main-footer p {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 5%;
+  width: 60%;
+}
+/* line 16, ../sass/partials/modules/_footer.scss */
+.main-footer ul {
+  width: 40%;
+  overflow: hidden;
+  margin-left: 35%;
+}
+/* line 22, ../sass/partials/modules/_footer.scss */
+.main-footer ul li {
+  float: right;
+  width: 20%;
+  padding: 0 10%;
+  list-style: none;
+}
+/* line 29, ../sass/partials/modules/_footer.scss */
+.main-footer ul li a img {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  /* line 36, ../sass/partials/modules/_footer.scss */
+  .main-footer header ul {
+    display: inline-block;
+    float: right;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 20%;
+  }
+  /* line 43, ../sass/partials/modules/_footer.scss */
+  .main-footer header ul li {
+    display: inline-block;
+    width: 48%;
+  }
+}

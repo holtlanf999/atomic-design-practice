@@ -1,8 +1,9 @@
 // Partials 
+@import "partials/_variables.scss";
+@import "partials/_fonts.scss";
 @import "partials/_functions.scss";
 @import "partials/_mixins.scss";
 @import "partials/_placeholders.scss";
-@import "partials/_variables.scss";
 
 // Modules
 @import "partials/_base.scss";

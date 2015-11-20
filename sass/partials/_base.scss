@@ -1,29 +1,12 @@
-// global css code for all site 
-
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300);
-@import url(https://fonts.googleapis.com/css?family=Marvel:400,400italic);
-
 body{
-	// background-attachment: fixed;
+	background-image: url('../img/background.jpg');
+	background-size: 100%;
+	background-attachment: fixed;
 	background-color: #000;
-	// background-image: url(../img/bgrd.jpg);
-	// background-repeat: no-repeat;
-	// background-size: 100%;
 	color: #fff;
-	font-family: "Roboto";
+	font-family: 'Roboto Condensed', sans-serif;
 	width: 100%;
-}
-
-
-@media(min-width: 1366px){
-
-	body{
-		background-size: 100%;
-		color: #fff;
-		font-family: "Roboto";
-		margin: 0 auto;
-		width: 90%;
+	a{
+		color: $link-color;
 	}
-
 }
