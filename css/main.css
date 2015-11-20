@@ -2,25 +2,21 @@
 @import url(https://fonts.googleapis.com/css?family=Coda:800);
 /* line 1, ../sass/partials/_base.scss */
 body {
-  background-image: url("../img/background.jpg");
-  background-size: 100%;
   background-attachment: fixed;
+  background-image: url("../img/background.svg");
   background-color: #000;
-  color: #fff;
+  color: #000;
   font-family: 'Roboto Condensed', sans-serif;
   width: 100%;
 }
-/* line 9, ../sass/partials/_base.scss */
+/* line 8, ../sass/partials/_base.scss */
 body a {
-  color: #b2d628;
+  color: #2e332d;
 }
 
 /* line 1, ../sass/partials/modules/_header.scss */
 header {
-  background-size: 100%;
-  background-color: rgba(86, 133, 112, 0.2);
-  background-image: url(../img/header-bgrd.jpg);
-  background-repeat: no-repeat;
+  background-color: rgba(26, 40, 34, 0.2);
   box-sizing: border-box;
   font-size: 1.5em;
   margin: 0;
@@ -28,13 +24,13 @@ header {
   padding: 5% 5% 0;
   width: 100%;
 }
-/* line 13, ../sass/partials/modules/_header.scss */
+/* line 10, ../sass/partials/modules/_header.scss */
 header .header-title {
   font-family: "Coda";
   margin: 0;
   width: 100%;
 }
-/* line 19, ../sass/partials/modules/_header.scss */
+/* line 16, ../sass/partials/modules/_header.scss */
 header .header-icons-container {
   display: block;
   list-style: none;
@@ -42,19 +38,19 @@ header .header-icons-container {
   padding: 0 2% 0 0;
   width: 100%;
 }
-/* line 27, ../sass/partials/modules/_header.scss */
+/* line 24, ../sass/partials/modules/_header.scss */
 header .social-icon {
   display: inline-block;
   width: 40px;
   margin-right: 5%;
 }
-/* line 33, ../sass/partials/modules/_header.scss */
+/* line 30, ../sass/partials/modules/_header.scss */
 header .social-icon .social-links img {
   height: auto;
   width: 100%;
 }
 @media (min-width: 1024px) {
-  /* line 27, ../sass/partials/modules/_header.scss */
+  /* line 24, ../sass/partials/modules/_header.scss */
   header .social-icon {
     margin-right: 2.5%;
   }
@@ -62,80 +58,85 @@ header .social-icon .social-links img {
 
 /* line 3, ../sass/partials/modules/_nav.scss */
 nav {
+  background-color: rgba(46, 71, 60, 0.2);
+  border-top: 1px solid #2e332d;
   font-size: 1.4em;
-  background-color: rgba(86, 133, 112, 0.2);
   margin: 0;
   width: 100%;
 }
-/* line 8, ../sass/partials/modules/_nav.scss */
+/* line 9, ../sass/partials/modules/_nav.scss */
 nav .nav-items-container {
   margin: 0 auto;
   padding: 0;
 }
-/* line 11, ../sass/partials/modules/_nav.scss */
+/* line 12, ../sass/partials/modules/_nav.scss */
 nav .nav-items-container .nav-main {
-  border-bottom: 1px solid #b2d628;
+  background-color: #000;
+  border-bottom: 1px solid #2e332d;
   list-style: none;
   margin: 0;
-  padding: 2% 5%;
-  width: 100%;
+  padding: 2% 0 2% 5%;
 }
-/* line 17, ../sass/partials/modules/_nav.scss */
+/* line 18, ../sass/partials/modules/_nav.scss */
 nav .nav-items-container .nav-main a {
-  color: #b2d628;
+  color: #778475;
   text-decoration: none;
 }
 @media (min-width: 1024px) {
-  /* line 24, ../sass/partials/modules/_nav.scss */
+  /* line 25, ../sass/partials/modules/_nav.scss */
   nav .nav-items-container {
     padding: 0 5%;
   }
-  /* line 26, ../sass/partials/modules/_nav.scss */
+  /* line 27, ../sass/partials/modules/_nav.scss */
   nav .nav-items-container .nav-main {
+    background-color: transparent;
     display: inline-block;
     padding: 1% 0;
     text-align: center;
-    width: 10%;
+    width: 12%;
   }
-  /* line 31, ../sass/partials/modules/_nav.scss */
+  /* line 33, ../sass/partials/modules/_nav.scss */
   nav .nav-items-container .nav-main:hover {
     border-bottom: none;
     background-color: rgba(109, 161, 138, 0.2);
+  }
+  /* line 37, ../sass/partials/modules/_nav.scss */
+  nav .nav-items-container .nav-main a {
+    color: #2e332d;
   }
 }
 
 /* line 4, ../sass/partials/modules/_blog-post.scss */
 .posts .blog-post {
-  background-color: rgba(86, 133, 112, 0.2);
-  display: block;
+  background-color: rgba(46, 71, 60, 0.2);
   margin: 5% auto 0;
   overflow: hidden;
   width: 90%;
 }
-/* line 10, ../sass/partials/modules/_blog-post.scss */
+/* line 9, ../sass/partials/modules/_blog-post.scss */
 .posts .blog-post img {
   width: 100%;
 }
-/* line 13, ../sass/partials/modules/_blog-post.scss */
+/* line 12, ../sass/partials/modules/_blog-post.scss */
 .posts .blog-post h4 {
   font-size: 1.5em;
   margin: 2.5% auto;
   padding: 0 5%;
   width: 90%;
 }
-/* line 19, ../sass/partials/modules/_blog-post.scss */
+/* line 18, ../sass/partials/modules/_blog-post.scss */
 .posts .blog-post time {
   font-size: 0.8em;
   padding: 2.5% 5%;
   width: 90%;
 }
-/* line 24, ../sass/partials/modules/_blog-post.scss */
+/* line 23, ../sass/partials/modules/_blog-post.scss */
 .posts .blog-post p {
   font-size: 1em;
   padding: 2.5% 5%;
   width: 90%;
 }
-/* line 29, ../sass/partials/modules/_blog-post.scss */
+/* line 28, ../sass/partials/modules/_blog-post.scss */
 .posts .blog-post .button {
   background-color: rgba(109, 161, 138, 0.2);
   border: none;
@@ -147,7 +148,7 @@ nav .nav-items-container .nav-main a {
   text-decoration: none;
   width: 100%;
 }
-/* line 39, ../sass/partials/modules/_blog-post.scss */
+/* line 38, ../sass/partials/modules/_blog-post.scss */
 .posts .blog-post .button:hover {
   background-color: rgba(171, 201, 188, 0.2);
   color: #fff;
@@ -158,31 +159,31 @@ nav .nav-items-container .nav-main a {
     display: inline-block;
     width: 68%;
   }
-  /* line 48, ../sass/partials/modules/_blog-post.scss */
+  /* line 47, ../sass/partials/modules/_blog-post.scss */
   .posts .blog-post {
     display: inline-block;
     float: left;
     margin-left: 2%;
     width: 30%;
   }
-  /* line 53, ../sass/partials/modules/_blog-post.scss */
+  /* line 52, ../sass/partials/modules/_blog-post.scss */
   .posts .blog-post button {
     padding: 0.5em 1em;
   }
 }
-/* line 58, ../sass/partials/modules/_blog-post.scss */
+/* line 57, ../sass/partials/modules/_blog-post.scss */
 .posts .paginator {
   display: inline-block;
-  margin: 5% 0 5% 5%;
+  margin: 2.5% 0 2.5% 5%;
   text-align: center;
   width: 90%;
 }
-/* line 63, ../sass/partials/modules/_blog-post.scss */
+/* line 62, ../sass/partials/modules/_blog-post.scss */
 .posts .paginator a {
   display: inline-block;
   width: 30%;
 }
-/* line 67, ../sass/partials/modules/_blog-post.scss */
+/* line 66, ../sass/partials/modules/_blog-post.scss */
 .posts .paginator p {
   display: inline-block;
   width: 20%;
@@ -190,30 +191,31 @@ nav .nav-items-container .nav-main a {
 
 /* line 3, ../sass/partials/modules/_aside.scss */
 .recent-articles {
-  background-color: rgba(30, 30, 30, 0.6);
+  background-color: rgba(30, 30, 30, 0.8);
   box-sizing: border-box;
+  color: #fff;
   display: block;
   overflow: hidden;
   width: 100%;
 }
-/* line 10, ../sass/partials/modules/_aside.scss */
+/* line 11, ../sass/partials/modules/_aside.scss */
 .recent-articles h4 {
   font-size: 1.5em;
   margin: 5%;
   text-align: center;
 }
-/* line 16, ../sass/partials/modules/_aside.scss */
+/* line 17, ../sass/partials/modules/_aside.scss */
 .recent-articles ul {
   font-size: 0.8em;
   list-style: none;
   margin: 5%;
   padding: 0;
 }
-/* line 21, ../sass/partials/modules/_aside.scss */
+/* line 22, ../sass/partials/modules/_aside.scss */
 .recent-articles ul a {
   color: #00ad00;
 }
-/* line 25, ../sass/partials/modules/_aside.scss */
+/* line 26, ../sass/partials/modules/_aside.scss */
 .recent-articles .recent-all {
   color: #00ad00;
   display: block;
@@ -230,25 +232,25 @@ nav .nav-items-container .nav-main a {
     overflow: hidden;
     width: 28%;
   }
-  /* line 40, ../sass/partials/modules/_aside.scss */
+  /* line 41, ../sass/partials/modules/_aside.scss */
   .recent-articles h4 {
     font-size: 1.5em;
     margin: 1.5em 1em 0 1em;
   }
-  /* line 45, ../sass/partials/modules/_aside.scss */
+  /* line 46, ../sass/partials/modules/_aside.scss */
   .recent-articles ul li {
     display: block;
     list-style: none;
     width: 90%;
   }
-  /* line 51, ../sass/partials/modules/_aside.scss */
+  /* line 52, ../sass/partials/modules/_aside.scss */
   .recent-articles .recent-all {
     text-decoration: none;
     width: 30%;
     padding: 0;
     margin: 2.5% 0 5% 60%;
   }
-  /* line 58, ../sass/partials/modules/_aside.scss */
+  /* line 59, ../sass/partials/modules/_aside.scss */
   .recent-articles ul li a {
     display: block;
     font-size: 1.5em;
@@ -257,11 +259,11 @@ nav .nav-items-container .nav-main a {
     overflow: hidden;
     width: 100%;
   }
-  /* line 67, ../sass/partials/modules/_aside.scss */
+  /* line 68, ../sass/partials/modules/_aside.scss */
   .recent-articles ul li a:hover {
     color: #FFA500;
   }
-  /* line 71, ../sass/partials/modules/_aside.scss */
+  /* line 72, ../sass/partials/modules/_aside.scss */
   .recent-articles ul li time {
     display: block;
   }
@@ -274,7 +276,7 @@ nav .nav-items-container .nav-main a {
 }
 /* line 4, ../sass/partials/modules/_main-article.scss */
 .main-article .mail {
-  color: #b2d628;
+  color: #004207;
   display: block;
   margin: 1% 5% 5%;
   width: 80%;
@@ -306,9 +308,9 @@ nav .nav-items-container .nav-main a {
 
 /* line 3, ../sass/partials/modules/_footer.scss */
 .main-footer {
-  background-color: rgba(86, 133, 112, 0.2);
+  background-color: rgba(26, 40, 34, 0.2);
   display: table;
-  padding: 2% 0;
+  padding: 0;
   width: 100%;
 }
 /* line 9, ../sass/partials/modules/_footer.scss */

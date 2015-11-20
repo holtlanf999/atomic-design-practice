@@ -2,8 +2,7 @@
 
 .posts {
 	.blog-post {
-		background-color: $section-bgrd-clr; //cambiar nombre de variable.
-		display: block;
+		background-color: darken($section-bgrd-clr, 20%);
 		margin: 5% auto 0;
 		overflow: hidden;
 		width: 90%;
@@ -57,7 +56,7 @@
 	}
 	.paginator {
 		display: inline-block;
-		margin: 5% 0 5% 5%;
+		margin: 2.5% 0 2.5% 5%;
 		text-align: center; 
 		width: 90%;
 		a{

@@ -1,9 +1,9 @@
 // css code for footer section 
 
 .main-footer{	
-	background-color: $section-bgrd-clr;
+	background-color: darken($section-bgrd-clr, 30%);
 	display: table;
-	padding: 2% 0;
+	padding: 0;
 	width: 100%;
 
 	p{
