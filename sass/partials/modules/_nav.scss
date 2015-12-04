@@ -1,18 +1,21 @@
 // css code for nav section
 
 nav {
-	background-color: darken($section-bgrd-clr,20%);
 	border-top: 1px solid $link-color;
 	font-size: 1.4em;
 	margin: 0;
 	width: 100%;
 	.nav-items-container {
-		display: none;
+		height: 0;
+		overflow: hidden;
 	}
 	ul.expanded {
 		display: block;
+		height: 190px;
 		margin: 0 auto;
 		padding: 0;
+		-webkit-transition: height 1s;
+		transition: height 1s;
 		.nav-main {
 			background-color: #000;
 			border-bottom: 1px solid $link-color; 
@@ -26,6 +29,7 @@ nav {
 		}
 		@media(min-width: 1024px) {
 			display: block;
+			height: auto;
 			margin: 0 auto;
 			padding: 0 5%;
 			.nav-main {
@@ -47,6 +51,7 @@ nav {
 	@media(min-width: 1024px) {
 		.nav-items-container {
 			display: block;
+			height: 2.2em;
 			margin: 0 auto;
 			padding: 0 5%;
 			.nav-main {
