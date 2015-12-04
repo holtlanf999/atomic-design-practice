@@ -1,3 +1,6 @@
-$('#menu-toggle').click(function(){
-	$('.nav-main ul').toggleClass('expanded');
+$('#menu-toggle').click(function() {
+	console.log('click');
+  $('nav ul').toggleClass('expanded');
+  console.log('class toggled');
 });
+

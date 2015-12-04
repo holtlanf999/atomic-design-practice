@@ -7,6 +7,10 @@ nav {
 	margin: 0;
 	width: 100%;
 	.nav-items-container {
+		display: none;
+	}
+	ul.expanded {
+		display: block;
 		margin: 0 auto;
 		padding: 0;
 		.nav-main {
@@ -14,15 +18,15 @@ nav {
 			border-bottom: 1px solid $link-color; 
 			list-style: none;
 			margin: 0;
-			padding: 2% 0 2% 5%;
+			padding: 1% 0 1% 5%;
 			a{
 				color: lighten($link-color, 30%);
 				text-decoration: none;
 			}
 		}
-	}
-	@media(min-width: 1024px) {
-		.nav-items-container {
+		@media(min-width: 1024px) {
+			display: block;
+			margin: 0 auto;
 			padding: 0 5%;
 			.nav-main {
 				background-color: transparent;
@@ -38,6 +42,41 @@ nav {
 					color: $link-color;
 				}
 			}
+		}
+	}
+	@media(min-width: 1024px) {
+		.nav-items-container {
+			display: block;
+			margin: 0 auto;
+			padding: 0 5%;
+			.nav-main {
+				background-color: transparent;
+				display: inline-block;
+				padding: 1% 0;
+				text-align: center;
+				width: 12%;
+				&:hover{
+					border-bottom: none;
+					background-color: lighten($section-bgrd-clr, 10%);
+				}
+				a{
+					color: $link-color;
+				}
+			}
+		}
+	}
+	.menu-toggle {
+		display: block;
+		background-image: url("../img/menu-icon.png");
+		background-size: cover;
+		color: transparent;
+		height: 40px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 35px;
+		@media (min-width: 1024px) {
+			display: none;
 		}
 	}
 }
